@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <TITLE>KDL Services</TITLE>
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="icon" type="image/png" href="images/favicon.png">  
+    <link rel="stylesheet" href="application.css">
+
+</HEAD>
+<body>
+   
+
+<section>
+
+    <div class="application-banner">
+        <img src="images/applicationbanner.png" alt="banner across the application section">
+    </div>
+    <form action="#" method="post">
+        
+
+
+            <div class="wrapper">
+                <div class="registration_form">
+                    <div class="title">
+                        KDL Services Employment Application 
+                    </div>
+            
+                    <form>
+                        <div class="form_wrap">
+
+                            <h1>Personal Information</h1><br>
+
+                            <div class="input_grp">
+                                <div class="input_wrap">
+                                    <label for="fname">First Name</label>
+                                    <input type="text" id="fname">
+                                </div>
+                                <div class="input_wrap">
+                                    <label for="lname">Middle Initial</label>
+                                    <input type="text" id="mname">
+                                </div>
+                                <div class="input_wrap">
+                                    <label for="lname">Last Name</label>
+                                    <input type="text" id="lname">
+                                </div>
+                                <div class="input_wrap">
+                                    <label>Date of Birth</label>
+                                    <input type="text" pattern="[0-9]*" name="date" type="text" class="single-date-field">
+                                    <p><small>E.g. 04/26/1980</small></p>
+                                </div>
+                       <!----------------------->         
+                            </div>
+
+                            <div class="input_grp">
+                                <div class="input_wrap">
+                                    <label for="street">Street Address</label>
+                                    <input type="text" name="street" required id="street"> 
+                                </div>
+                                <div class="input_wrap">
+                                    <label for="city">City</label>
+                                    <input type="text" name="city" required id="city">
+                                </div>
+                                <div class="input_wrap">
+                                    <label for="state">State</label>
+                                    <select id="text" name="state"><option value="---">---</option><option value="Alabama">Alabama</option><option value="Alaska">Alaska</option><option value="Arizona">Arizona</option><option value="Arkansas">Arkansas</option><option value="California">California</option><option value="Colorado">Colorado</option><option value="Connecticut">Connecticut</option><option value="Delaware">Delaware</option><option value="District of Columbia">District of Columbia</option><option value="Florida">Florida</option><option value="Georgia">Georgia</option><option value="Guam">Guam</option><option value="Hawaii">Hawaii</option><option value="Idaho">Idaho</option><option value="Illinois">Illinois</option><option value="Indiana">Indiana</option><option value="Iowa">Iowa</option><option value="Kansas">Kansas</option><option value="Kentucky">Kentucky</option><option value="Louisiana">Louisiana</option><option value="Maine">Maine</option><option value="Maryland">Maryland</option><option value="Massachusetts">Massachusetts</option><option value="Michigan">Michigan</option><option value="Minnesota">Minnesota</option><option value="Mississippi">Mississippi</option><option value="Missouri">Missouri</option><option value="Montana">Montana</option><option value="Nebraska">Nebraska</option><option value="Nevada">Nevada</option><option value="New Hampshire">New Hampshire</option><option value="New Jersey">New Jersey</option><option value="New Mexico">New Mexico</option><option value="New York">New York</option><option value="North Carolina">North Carolina</option><option value="North Dakota">North Dakota</option><option value="Northern Marianas Islands">Northern Marianas Islands</option><option value="Ohio">Ohio</option><option value="Oklahoma">Oklahoma</option><option value="Oregon">Oregon</option><option value="Pennsylvania">Pennsylvania</option><option value="Puerto Rico">Puerto Rico</option><option value="Rhode Island">Rhode Island</option><option value="South Carolina">South Carolina</option><option value="South Dakota">South Dakota</option><option value="Tennessee">Tennessee</option><option value="Texas">Texas</option><option value="Utah">Utah</option><option value="Vermont">Vermont</option><option value="Virginia">Virginia</option><option value="Virgin Islands">Virgin Islands</option><option value="Washington">Washington</option><option value="West Virginia">West Virginia</option><option value="Wisconsin">Wisconsin</option><option value="Wyoming">Wyoming</option></select>
+                                </div>
+                                <div class="input_wrap">
+                                    <label for="zipcode">Zip Code</label>
+                                    <input type="text" pattern="[0-9]{5}" title="Five digit zip code">
+                                </div>
+                            </div>
+                      <!-----------------------> 
+                            <div class="input_grp">
+                                <div class="input_wrap">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" name="email" required id="email">
+                                </div>
+                                <div class="input_wrap">
+                                        <label>Gender</label>
+                                        <ul>
+                                            
+                                                <label class="radio">
+                                                    <input type="radio" name="gender" value="male" class="input_radio">
+                                                    <span>Male</span>
+                                                </label>
+                                           
+                                            
+                                                <label class="radio">
+                                                    <input type="radio" name="gender" value="female" class="input_radio">
+                                                    <span>Female</span>
+                                                </label>
+
+                                                <label class="radio">
+                                                    <input type="radio" name="gender" value="female" class="input_radio">
+                                                    <span>Other</span>
+                                                </label>
+                                            
+                                        </ul>
+                                </div>
+                                <div class="input_wrap">
+                                    <label for="salary">Salary Required</label>
+                                    <input type="text" name="salary" required id="salary">
+                                </div>
+                            </div>
+                    <!-----------------------> 
+                            <div class="input_grp">
+                                <div class="input_wrap">
+                                    <label>Are you 16 years of age or older?</label>
+                                    <ul>
+                                        
+                                            <label class="radio">
+                                                <input type="radio" name="age" value="age" class="input_radio1">
+                                                <span>Yes</span>
+                                            </label>
+                                        
+                                      
+                                            <label class="radio">
+                                                <input type="radio" name="age" value="age" class="input_radio1">
+                                                <span>No</span>
+                                            </label>
+                                       
+                                    </ul>
+                                </div>
+                                <div class="input_wrap">
+                                    <label>Do you have friends or relatives working for us?</label>
+                                    <ul>
+                                        
+                                            <label class="radio">
+                                                <input type="radio" name="friends" value="friends" class="input_radio">
+                                                <span>Yes</span>
+                                            </label>
+                                        
+                                            
+                                        
+                                            <label class="radio">
+                                                <input type="radio" name="friends" value="friends" class="input_radio">
+                                                <span>No</span>
+                                            </label>
+                                        
+                                    </ul>
+                                </div>
+                                <div class="input_wrap">
+                                    <label>Are you legally eligible to work in US</label>
+                                    <ul>
+                                        
+                                            <label class="radio">
+                                                <input type="radio" name="eligible" value="eligible" class="input_radio">
+                                                <span>Yes</span>
+                                            </label>
+                                       
+                                        
+                                            <label class="radio">
+                                                <input type="radio" name="eligible" value="eligible" class="input_radio">
+                                                <span>No</span>
+                                            </label>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                    <!-----------------------> 
+                            <div class="input_grp">
+                                <div class="input_wrap">
+                                    <label>Do you have previous experience in the warehouse</label>
+                                        <ul>
+                                           
+                                                <label class="radio">
+                                                <input type="radio" name="previous" value="previous" class="input_radio">
+                                                <span>Yes</span>
+                                            </label>
+                                            
+                                            
+                                                <label class="radio">
+                                                <input type="radio" name="previous" value="previous" class="input_radio">
+                                                <span>No</span>
+                                                </label>
+                                            
+                                        </ul>
+                                </div>
+                                <div class="input_wrap">
+                                    <label>Are you able to read and understand labels?</label>
+                                        <ul>
+                                            
+                                                <label class="radio">
+                                                <input type="radio" name="read" value="read" class="input_radio">
+                                                <span>Yes</span>
+                                                </label>
+                                            
+                                            
+                                                <label class="radio">
+                                                <input type="radio" name="read" value="read" class="input_radio">
+                                                <span>No</span>
+                                                </label>
+                                            
+                                        </ul>
+                                </div>
+                            </div>
+
+                            <h1>Employment History</h1><br>
+                     <!-----------------------> 
+                            <div class="input_grp">
+                                <div class="input_wrap">
+                                    <label for="cemployer">(1) Name of Employer</label>
+                                    <input type="text" id="cemployer">
+                                </div>
+                                <div class="input_wrap">
+                                    <label for="salary">Salary</label>
+                                    <input type="text" id="salary1">
+                                </div>
+                                <div class="input_wrap">
+                                    <label for="position">Position</label>
+                                    <input type="text" id="position">
+                                </div>
+                                <div class="input_wrap">
+                                    <label for="rol">Employed To-From</label>
+                                    <input type="text" id="rol">
+                                    <p>Month/Date/Yr-to- Month/Date/Yr</p>
+                                </div>  
+                            </div>
+                        <div class="input_grp">
+                            <div class="input_wrap">
+                                <label for="cemployer">Address, City, State</label>
+                                <input type="text" id="longaddress">
+                            </div>
+                            <div class="input_wrap">
+                                <label for="phone_num">Phone Number</label>
+                                <input type="tel" id="phone_num" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}">
+                            </div>
+                        </div>
+                     <!-----------------------> 
+                      
+                        <div class="input_grp">
+                            <div class="input_wrap">
+                                <label for="cemployer">(2) Name of Previous Employer</label>
+                                <input type="text" id="cemployer">
+                            </div>
+                            <div class="input_wrap">
+                                <label for="salary">Salary</label>
+                                <input type="text" id="salary1">
+                            </div>
+                            <div class="input_wrap">
+                                <label for="position">Position</label>
+                                <input type="text" id="position">
+                            </div>
+                            <div class="input_wrap">
+                                <label for="rol">Employed To-From</label>
+                                <input type="text" id="rol">
+                                <p>Month/Date/Yr-to- Month/Date/Yr</p>
+                            </div>  
+                        </div>
+                        <div class="input_grp">
+                            <div class="input_wrap">
+                                <label for="cemployer">Address, City, State</label>
+                                <input type="text" id="longaddress">
+                            </div>
+                            <div class="input_wrap">
+                                <label for="phone_num">Phone Number</label>
+                                <input type="tel" id="phone_num" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}">
+                            </div>
+                        </div>
+                <!-----------------------> 
+                <h1>Reference</h1><br>
+
+                        <div class="input_grp">
+                            <div class="input_wrap">
+                                <label for="cemployer">(1) Reference</label>
+                                <input type="text" id="reference">
+                            </div>
+                            <div class="input_wrap">
+                                <label for="salary">Relation to Applicant</label>
+                                <input type="text" id="relation">
+                            </div>
+                            <div class="input_wrap">
+                                <label for="phone_num">Phone Number</label>
+                                <input type="tel" id="phone_num" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}">
+                            </div>   
+                        </div>
+                <!-----------------------> 
+
+                        <div class="input_grp">
+                            <div class="input_wrap">
+                                <label for="cemployer">(2) Reference</label>
+                                <input type="text" id="reference">
+                            </div>
+                            <div class="input_wrap">
+                                <label for="salary">Relation to Applicant</label>
+                                <input type="text" id="relation">
+                            </div>
+                            <div class="input_wrap">
+                                <label for="phone_num">Phone Number</label>
+                                <input type="tel" id="phone_num" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}">
+                            </div>   
+                        </div>
+                <!-----------------------> 
+
+                        <div class="input_grp">
+                            <div class="input_wrap">
+                                <label for="cemployer">(3) Reference</label>
+                                <input type="text" id="reference">
+                            </div>
+                            <div class="input_wrap">
+                                <label for="salary">Relation to Applicant</label>
+                                <input type="text" id="relation">
+                            </div>
+                            <div class="input_wrap">
+                                <label for="phone_num">Phone Number</label>
+                                <input type="tel" id="phone_num" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}">
+                            </div>   
+                        </div>
+                <!----------------------->
+                <div class="file-upload">
+                    <h1> Resume download</h1>
+                    <p>(Click the "Submit" blue button to upload resume)</p>
+                </div>
+
+                 
+                <div class="upload-container">
+                    <input type="file" id="file_upload" multiple="true">
+       <!------------              <button class="upload-btn" onclick="uploadFiles()">Submit Resume</button> ---------->
+              </div>
+              <br>
+              
+
+                                               
+                              
+                            <div class="input_wrap">
+                                <a class="btn" href="thankyou.html">Submit Application</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            
+          
+
+           
+
+
+
+
+        </form>
+
+    <section class="roles">
+                <div class="write-ups">
+                    <h3 id="special">Equal Opportunity Employer</h3>
+                    <p>KDL Services Supply Management is committed to the principle of equal employment opportunities for all employees, 
+                        as well as providing them with a work environment free of discrimination and harassment. All employment decisions 
+                        at KDL Services are based on business needs, job requirements, and individual qualifications, without regard to 
+                        race, color, religion or belief, nationality, social or ethnic origin, sex (including pregnancy), age, physical, 
+                        mental or sensory disability, sexual orientation, gender identity and/or expression, marital status, past or 
+                        present military service, family medical history or genetic information, family or parental status, or any other 
+                        status protected by the laws or regulations in the locations where we operate. KDL Services will not tolerate 
+                        discrimination or harassment based on any of these characteristics. KDL Services will consider for employment 
+                        qualified individuals with criminal histories in a manner consistent with all applicable laws, regulations, and 
+                        ordinances.</p>
+                </div>
+    </section>
+         
+        
+   
+</section>
+        
+<script src="application.js"></script>
+
+</body>
+
+
+
+</HTML>

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,500;1,500&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+.nav{
+    background-color: #cbcbcb;
+}
+
+.rap{
+    width: 80%;
+    margin: 15px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 85px;
+}
+h1{
+    font-family: 'Anton' sans-serif;
+    color:#bf9a00;
+    font-size: 4em;
+    font-weight: 300;
+    padding: 20px;
+}
+
+h1 span{
+    color: #d3a625;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+
+.cup{
+    padding: 10% 0;
+}
+
+.cup h2{
+    margin: 14px 0;
+    font-family: 'Barlow' sans-serif ;
+    font-size: 30px;
+}
+
+.cup p{
+    width: 85%;
+    margin: auto;
+    font-family: nunito;
+    font-size: 15px;
+}
+
+.cup a{
+    text-decoration: none;
+    background: #bf9a00;
+    color: #fff;
+    padding: 10px 30px;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: 'Nunito';
+    letter-spacing: .5px;
+}
+
+.demo{
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.demo i{
+    color: #ffff;
+    line-height: 80px;
+    font-size: 25px;
+}
+
+.single-box{
+    width: 400px;
+    height: 400px;
+    margin: 0 15px;
+    transition: .7s;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./images/packing.jpeg);
+    text-align: center;
+    color: #fff;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 5px;  
+}
+
+.single-box:nth-child(2){
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./images/black.jpg);
+    text-align: center;
+}
+
+.single-box:nth-child(3){
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./images/warehouseone.jpeg);
+    text-align: center;
+}
+
+.single-box:nth-child(4){
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./images/printing.jpeg);
+    text-align: center;
+}
+
+.single-box:hover{
+    transform: scale(1.2);
+    z-index: 2;
+}
+
+

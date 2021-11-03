@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,500;1,500&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    background-size: cover;
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+    
+}
+/*
+.container{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(135deg, #d3a625, #555555, #111111 74%);
+    overflow-x: hidden;
+    transform-style: preserve-3d;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    height: 3rem;
+}
+
+.menu{
+    
+    max-width: 72rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   color: #fff;
+}
+
+.logo{
+   
+    width: 250px;
+    height: 250px;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.logo span{
+    font-weight: 300;
+}
+
+.bubble a{
+    background-color: #000;
+    margin-top: 1rem;
+    padding: 0.6rem 1.8rem;
+    font:#fff;
+    border: none;
+    
+}
+
+.hamburger-menu{
+    height: 4rem;
+    width: 3rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #bf9a00;
+    flex-direction: column;
+    border: 15px solid #bf9a00;
+    box-shadow: 0 0 15px 1px;
+}
+
+
+.bar{
+    width: 1.9rem;
+    height: 1.5px;
+    border-radius: 2px;
+    background-color: #eee;
+    transition: 0.5s;
+    position: relative;
+}
+
+.bar:before, .bar:after{
+    content: "";
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background-color: #eee;
+    transition: .5s;
+}
+
+.bar:before{
+    transform: translateY(-9px);
+}
+
+.bar:after{
+    transform: translateY(9px);
+}
+
+.main{
+    position: relative;
+    width: 100%;
+    left: 0;
+    z-index: 5;
+    overflow: hidden;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+}
+
+header{
+    min-height: 100vh;
+    width: 100%;
+    background: url("images/pexels-cleyder-duque-3821385.jpg") no-repeat top center / cover;
+    position: relative; 
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner{
+    max-width: 35rem;
+    text-align: center;
+    color: #fff;
+    padding: 0 2rem;
+}
+
+.title{
+    font-size: 5.0rem;
+}
+
+.inner p{
+    font-size: 18px;
+    color: #bf9a00;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .4);
+    border: 5px none rgba(0, 0, 0, .5);
+    border-radius: 5px 5px 5px 5px;
+    
+}
+
+.btn{
+    margin-top: 1rem;
+    padding: 0.6rem 1.8rem;
+    background-color: #bf9a00;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.container.active .bar{
+    transform: rotate(360deg);
+    background-color: transparent;
+}
+
+.container.active .bar:before{
+    transform: translateY(0) rotate(45deg);
+}
+
+.container.active .bar:after{
+    transform: translateY(0) rotate(-45deg);
+}
+
+.container.active .main{
+    animation: main-animation 0.5s ease;
+    cursor: pointer;
+    transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0.5);
+}
+
+@keyframes main-animation{
+    from{
+        transform: translateY(0);
+    }
+
+    to{
+        transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0.5);  
+    }
+}
+
+.links{
+    position: absolute;
+    width: 30%;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+}
+
+.links a{
+    text-decoration: none;
+    color: #bf9a00;
+    padding: 0.7rem 0;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: hide 0.5s forwards ease;
+}
+
+.links a:hover{
+    color: white;
+}
+
+.container.container.active .links a{
+    animation: appear 0.5s forwards ease var(--i);
+}
+
+@keyframes appear {
+    from{
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes hide {
+    from{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    to{
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    
+    
+}
+
+.shadow{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transform-style: preserve-3d;
+    transform-origin: left;
+    transition: 0.5s;
+    background-color: black;
+}
+
+.shadow.one{
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.shadow.two{
+    z-index: -2;
+    opacity: 0.1;
+}
+
+.container.active .shadow.one{
+    animation: shadow-one 0.6s ease-out;
+    transform: perspective(1300px) rotateY(20deg) translateZ(215px) scale(0.5);
+}
+
+@keyframes shadow-one{
+    0%{
+        transform: translate(0);
+    }
+
+    5%{
+     transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0.5); 
+    }
+
+    100%{
+    transform: perspective(1300px) rotateY(20deg) translateZ(215px) scale(0.5);   
+    }
+}
+
+.container.active .shadow.two{
+    animation: shadow-two 0.6s ease-out;
+    transform: perspective(1300px) rotateY(20deg) translateZ(120px) scale(0.5);
+}
+
+@keyframes shadow-two{
+    0%{
+        transform: translate(0);
+    }
+
+    20%{
+     transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0.5); 
+    }
+
+    100%{
+    transform: perspective(1300px) rotateY(20deg) translateZ(120px) scale(0.5);   
+    }
+}
+
+.container.active .main:hover + .shadow.one{
+    transform: perspective(1300px) rotateY(20deg) translateZ(230px) scale(0.5);
+}
+
+.container.active .main:hover {
+    transform: perspective(1300px) rotateY(20deg) translateZ(340px) scale(0.5);
+}
+
+:root {
+    --clr-primary: #bf9a00;
+    --clr-gray: #37474f;
+    --clr-gray-light: #b0bec5;
+  }
+  
+  .graphic {
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='152' height='152' viewBox='0 0 152 152'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='temple' fill='%23bf9a00' fill-opacity='0.4'%3E%3Cpath d='M152 150v2H0v-2h28v-8H8v-20H0v-2h8V80h42v20h20v42H30v8h90v-8H80v-42h20V80h42v40h8V30h-8v40h-42V50H80V8h40V0h2v8h20v20h8V0h2v150zm-2 0v-28h-8v20h-20v8h28zM82 30v18h18V30H82zm20 18h20v20h18V30h-20V10H82v18h20v20zm0 2v18h18V50h-18zm20-22h18V10h-18v18zm-54 92v-18H50v18h18zm-20-18H28V82H10v38h20v20h38v-18H48v-20zm0-2V82H30v18h18zm-20 22H10v18h18v-18zm54 0v18h38v-20h20V82h-18v20h-20v20H82zm18-20H82v18h18v-18zm2-2h18V82h-18v18zm20 40v-18h18v18h-18zM30 0h-2v8H8v20H0v2h8v40h42V50h20V8H30V0zm20 48h18V30H50v18zm18-20H48v20H28v20H10V30h20V10h38v18zM30 50h18v18H30V50zm-2-40H10v18h18V10z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+
+    
+  }
+  
+  .wrapper-grid {
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: repeat(auto-fit, 20rem);
+    justify-content: center;
+  }
+  
+  .storage {
+    overflow: hidden;
+    box-shadow: 0px 2px 8px 0px var(--clr-gray-light);
+    background-color: white;
+    text-align: center;
+    border-radius: 1rem;
+    position: relative;
+    margin: 0.5rem;
+  }
+  
+.banner-imgone {
+    position: absolute;
+    background-image: url(./images/packing.jpeg);
+    height: 10rem;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner-imgtwo {
+    position: absolute;
+    background-image: url(./images/shipping.jpeg);
+    height: 10rem;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-imgthree {
+    position: absolute;
+    background-image: url(./images/warehouseone.jpeg);
+    height: 10rem;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-imgfour {
+    position: absolute;
+    background-image: url(./images/printing.jpeg);
+    height: 10rem;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box {
+    width: 8rem;
+    clip-path: circle(60px at center);
+    margin-top: 8.0rem;
+    border: #fff;
+  }
+  
+  .name {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .description {
+    margin: 1rem 2rem;
+    font-size: 0.9rem;
+  }
+  
+  
+  .btn {
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    padding: 1rem;
+    background-color: var(--clr-primary);
+  }
+
+.poster{
+    display: flex;
+}
+.poster img{   
+    display: flex; 
+    width: 40%;
+    margin: 5px;
+    padding: 5px;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.titleText span{
+    color: #d3a625;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+*/
+.statement{
+    margin: 80px;
+    font-size: 24px;
+}
+
+.statement img{
+    display: float;
+    margin: 5px;
+    padding: 5px;
+    justify-content: center;
+    margin-left: 150px;
+}
+
+
+.art img{
+    margin-left: auto;
+    margin-right: auto;
+    
+    width: 100%;
+    background-color: #555;
+    background-color: #555555;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='152' height='152' viewBox='0 0 152 152'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='temple' fill='%23bf9a00' fill-opacity='0.4'%3E%3Cpath d='M152 150v2H0v-2h28v-8H8v-20H0v-2h8V80h42v20h20v42H30v8h90v-8H80v-42h20V80h42v40h8V30h-8v40h-42V50H80V8h40V0h2v8h20v20h8V0h2v150zm-2 0v-28h-8v20h-20v8h28zM82 30v18h18V30H82zm20 18h20v20h18V30h-20V10H82v18h20v20zm0 2v18h18V50h-18zm20-22h18V10h-18v18zm-54 92v-18H50v18h18zm-20-18H28V82H10v38h20v20h38v-18H48v-20zm0-2V82H30v18h18zm-20 22H10v18h18v-18zm54 0v18h38v-20h20V82h-18v20h-20v20H82zm18-20H82v18h18v-18zm2-2h18V82h-18v18zm20 40v-18h18v18h-18zM30 0h-2v8H8v20H0v2h8v40h42V50h20V8H30V0zm20 48h18V30H50v18zm18-20H48v20H28v20H10V30h20V10h38v18zM30 50h18v18H30V50zm-2-40H10v18h18V10z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    overflow-y: hidden;
+}
+
+
+ 
+
+
+
+
+
+
+ 
+
+ 
+

@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,500;1,500&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+:root{
+    --yellow: #bf9a00;
+    --dark-color: #856b00;
+    --black: #444;
+    --light-color: #666;
+    --border: .1rem solid rgba(0,0,0,.1);
+    --border-hover:.1rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Barlow', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    transition: none;
+    width: none;
+}
+
+body{
+	background-image: url(./images/Ubodytransparent.png);
+}
+
+fieldset{
+    margin: 2rem 0;
+    padding: 1rem 2rem;
+    border: solid 1px #bf9a00;
+    border-radius: 6px;
+    min-width: 200px
+}
+
+legend{
+    font-size: 1.25rem;
+    padding: 0 .25rem;
+    color: #bf9a00;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    border-radius: .5rem;
+    color: #fff;
+    background: #bf9a00;
+    font-size: 1.7rem;
+    cursor: pointer;
+    font-weight: 500;
+    margin-left: 22.5rem;
+   
+}
+
+.btn:hover{
+    background-color: #856b00;
+}
+
+.application-banner img{
+    background-size: cover;
+    background-position: cover;
+    width: 100%;
+}
+
+form{
+    margin: 5rem 0 0 0;
+}
+
+ 
+.wrapper{
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.registration_form{
+	background: #e5e5e5;
+	padding: 25px;
+	border-radius: 5px;
+	width: 80%;
+}
+
+.registration_form .title{
+	text-align: center;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #bf9a00;
+	letter-spacing: 5px;
+	font-weight: 700;
+}
+
+.form_wrap{
+	margin-top: 35px;
+    margin: 2rem;
+}
+
+.form_wrap .input_wrap{
+	margin-bottom: 15px;
+}
+
+.form_wrap .input_wrap:last-child{
+	margin-bottom: 0;
+}
+
+.form_wrap .input_wrap label{
+	display: block;
+	margin-bottom: 3px;
+	color: #909090;
+    
+}
+
+.form_wrap .input_grp{
+	display: flex;
+	justify-content: space-between;
+}
+
+.form_wrap .input_grp  input[type="text"]{
+	width: 165px;
+}
+
+.form_wrap  input[type="text"]{
+	width: 100%;
+	border-radius: 3px;
+	/*border: 1px solid #b7b7b7;*/
+	padding: 10px;
+	outline: none;
+}
+
+.form_wrap  input[type="text"]:focus{
+	border-color: #000;
+}
+
+.single-date-field {
+    width: 120px;
+  }
+
+.form_wrap ul{
+	background: #fff;
+	padding: 8px 10px;
+	border-radius: 3px;
+	display: flex;
+	justify-content: center;
+}
+
+#fname {
+    width: 280px;
+}
+#email{
+    width: 350px;
+    padding: 10px;
+}
+#lname {
+    width: 280px;
+}
+#phone_num{
+    width: 280px;
+    padding: 10px;
+}
+#mname{
+    width: 90px;
+}
+
+#street{
+    width: 280px;
+}
+
+#city{
+    width: 250px;
+}
+
+#cemployer{
+    width: 280px;
+}
+
+#salary{
+    width: 260px;
+}
+
+#position{
+    width: 200px;
+}
+
+#rol{
+    width: 280px;
+}
+
+#longaddress{
+    width: 662px;
+}
+#reference{
+    width: 450px;
+}
+
+#relation{
+   width: 200px; 
+}
+
+.form_wrap ul li:first-child{
+	margin-right: 15px; 
+}
+
+.form_wrap ul {
+	position: relative;
+	margin-bottom: 0;
+}
+
+
+
+.form_wrap ul .radio span{
+	display: inline-block;
+	font-size: 14px;
+	padding: 3px 10px;
+	border-radius: 3px;
+	color: #555;   
+}
+
+
+.form_wrap .input_radio1:checked ~ span{
+	background: #ebe0b2;
+}
+
+.form_wrap .submit_btn{
+	width: 100%;
+	background: #bf9a00;
+	padding: 10px;
+	border: 0;
+	border-radius: 3px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	cursor: pointer;
+}
+
+.form_wrap .submit_btn:hover{
+	background: #0580a6;
+
+}
+
+.roles{
+    margin-bottom: 5rem;
+}
+
+.roles .write-ups h3{
+    text-align: center;
+    padding: 5rem;
+}
+
+.roles .write-ups p{
+    padding: 0 8rem 0 8rem;
+}
+
+.file-upload{
+    text-align: center;
+    padding: 2rem 0 2rem 0;
+}
+.upload-container {
+    position: relative;
+    text-align: center;
+}
+.upload-container input {
+    border: 3px solid #909090;
+    background: #fff;
+    outline: 2px dashed #909090;
+    outline-offset: -10px;
+    padding: 100px 0px 100px 250px;
+    text-align: center !important;
+    width: 500px;
+}
+ 
+.upload-container input:hover {
+    background: #fff;
+}
+ 
+.upload-container:before {
+    position: absolute;
+    bottom: 100px;
+    padding: 4rem;
+    left: 225px;
+    content: " Drag and Drop files here (or)  ";
+    color: #909090;
+    font-weight: 900;
+    text-align: right;
+}
+ 
+.upload-btn {
+    align-items: center;
+    padding: 7px 20px;
+    background-color: #f7f7f7;
+    border: dashed 2px #0580a6
+}
+/*
+label{
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.checks label{
+    margin-top: 0;
+}
+
+label:first-of-type{
+    margin-top: 0;
+}
+
+input{
+    padding: .5rem;
+    border: solid 1px #555;
+}
+
+input[type="email"], input[type="text"]{
+    width: 15rem;
+}
+
+textarea{
+    min-height: 100%;
+    min-width: 100%;
+    padding: .5rem;
+    border: solid 1px #999;
+}
+
+.checks{
+    margin-bottom: 1rem;
+}
+
+.checks p{
+    margin-bottom: 0;
+}
+
+input[type="checkbox"] + label, input[type="radio"] + label{
+    display: inline-block;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+input[type="radio"]{
+    margin-left: 1.5rem;
+    margin-right: 0;
+}
+
+input[type="radio"]:first-of-type{
+    margin-left: 0;
+}
+
+input[type='submit']{
+    padding: .5rem 1rem;
+    border-radius: 6px;
+    background-color: #333;
+    color: #fff;
+    font-size: .8rem;
+}
+
+@media screen and (min-width: 430px){
+    legend{
+        font-size: 1.75rem;
+    }
+
+    fieldset{
+        width: 70%;
+        min-width: 320px;
+        margin: auto;
+    }
+
+    .checks label{
+        display: inline-block;
+        padding-top: .5rem;
+        margin-top: 0;
+        margin-right: .5rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
