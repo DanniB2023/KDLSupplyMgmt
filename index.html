@@ -21,9 +21,13 @@
    
 
     <link rel="stylesheet" href="main.css">
+    <link rel="styleshett" href="../scss/style.scss">
 
 </head>
 <body>
+   
+        
+    
 
     <header class="header">
 
@@ -32,7 +36,7 @@
            
 
             <form action="quote.html" class="search-form">
-                <input type="search" name="#" placeholder="Enter your email for a quote....." id="search-box">
+                <input type="search" name="#" placeholder="Email Us for a quote" id="search-box">
                 <label for="search-box" class="fas fa-edit"></label>
             </form>
 
@@ -46,6 +50,19 @@
         </div>
 
         <div class="header-2">
+
+            <div class="ticker-wrap">
+                <div class="ticker">
+                  <div class="ticker__item">Thank you for visiting</div>
+                  <div class="ticker__item">New Location Opening Soon</div>
+                  <div class="ticker__item">We are hiring, we love to have you on our team</div>
+                  <div class="ticker__item">Thank you for visiting</div>
+                  <div class="ticker__item">New Location Opening Soon</div>
+                  <div class="ticker__item">We are hiring, we love to have you on our team</div>
+              
+                </div>
+            </div>
+
             <nav class="navy">
                 
                 <a href="index.html">Home</a>
@@ -91,15 +108,15 @@
     <div class="row">
 
         <div class="content">
-            <h3>Supply Chain Management</h3>
-            <p>A recently launched, minority-owned business, based out of Louisville, KY 
-                that provides logistical services related to <span>print, packaging, shipping/receiving of goods, 
+            <h3>Respect Quality Integrity Community</h3>
+            <p>A minority-owned business, based out of Louisville, KY 
+                that provides logistical and e-commerce services related to <span>print, packaging, shipping/receiving of goods, 
                 order fulfillment and storage.</span>
             </p>
-            <a href="quote.html" target="_blank" class="btn">Request A Quote</a>
+           <!--- <a href="quote.html" target="_blank" class="btn">Request A Quote</a>--->
         </div>
 
-        <div class="img">
+        <div class="img circle grow">
             <img class="kdl-icon" src="images/kdlone.png" alt="KDL logo">
         </div>
 
@@ -145,60 +162,70 @@
 
 <section class="table-cards">
     
-<div class="card">
-    <div class="bg-image">
-        <img src="images/provideassembly.jpg" alt="kitting and assembly">
-    </div>
-   
-    <div class="info">
-        <h3>Kitting and Assembly</h3>
-        <p>Cushioning. Corrugated boxes. Folding cartons. From bags. KDL can equip you will all you could ever need.
-        </p>
-    </div>
-</div>
+        <div class="card">
+            <div class="bg-image">
+                <img src="images/provideassembly.jpg" alt="kitting and assembly">
+            </div>
+            <div class="info">
+                <h3>Kitting and Assembly</h3>
+                <p>From bags, cushioning, corrugated boxes, folding cartons and more. KDL can ensure you we are equip to cover all your needs.
+                </p>
+            </div>
+        </div>
 
 
-<div class="card">
-    <div class="bg-image">
-        <img src="images/providekitting.jpg" alt="kitting in a warehouse">
-    </div>
-   
-    <div class="info">
-        <h3>Packing and Shipping</h3>
-        <p>Shipping essentials and palletizing materials you need to keep your business moving along.
-        </p>
-    </div>
-</div>
+        <div class="card">
+            <div class="bg-image">
+                <img src="images/providekitting.jpg" alt="kitting in a warehouse">
+            </div>
+            <div class="info">
+                <h3>Shipping and Receiving</h3>
+                <p>Provide packaging and palletizing of materials that keep your business moving along.
+                </p>
+            </div>
+        </div>
 
-<div class="card">
-    <div class="bg-image">
-        <img src="images/providewarehouse.jpg" alt="warehouse workers">
-    </div>
-    
-    <div class="info">
-        <h3>Contract Warehousing</h3>
-        <p>Leasing options available whether short or long term warehousing at KDL is safe and secure. 
-        </p>
-    </div>
-</div>
+        <div class="card">
+            <div class="bg-image">
+                <img src="images/providewarehouse.jpg" alt="warehouse workers">
+            </div>
+            <div class="info">
+                <h3>Contract Warehousing</h3>
+                <p>Leasing options available whether short or long term warehousing at KDL is safe and secure. 
+                </p>
+            </div>
+        </div>
 
-<div class="card">
-    <div class="bg-image">
-        <img src="images/printing.jpeg" alt="screen printing picture">
-    </div>
-    
-    <div class="info">
-        <h3>Printing Services</h3>
-        <p>KDL Services offers print services offering businesses looking for high quality items such as printed tees, flyers and more!
-        </p>
-    </div>
-</div>
+        <div class="card">
+            <div class="bg-image">
+                <img src="images/printing.jpeg" alt="screen printing picture">
+            </div>
+            <div class="info">
+                <h3>Printing Services</h3>
+                <p>Offer print services for businesses flyers looking for high quality items, large format and more!
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="bg-image">
+                <img src="images/istockphoto.jpeg" alt="e-commerce">
+            </div>
+            <div class="info">
+                <h3>Logistics and E-Commerce</h3>
+                <p>Focus on manufacturing and distribution of the right product at the right time while managing supply and demand. 
+                </p>
+            </div>
+        </div>
+</section>
+
 <section>
-<div>
-    <a href="capabilities.html" class="btn">Learn More</a>
-</div>
+        <div>
+            <a href="capabilities.html" class="btn learn">Learn More</a>
+        </div>
 </section>
-</section>
+
+
 <section>
     <div class="write-ups">
         <h3>The Role of KDL Services Within Manufacturing</h3>
@@ -256,6 +283,14 @@
 </section>
 
 
+<section class="back_drop">
+    <div class="back_drop_img">
+        <img src="images/providenew.svg">
+    </div>
+</section>
+<!---------------
+
+    
 <div class="serve">
     
 
@@ -327,7 +362,7 @@
         </div>
     </div>
 </div>
-
+------------>
 <section class="roles">
     <div class="write-ups">
         <h3>Let us make it easier</h3>
@@ -355,9 +390,12 @@
 </section>
 
 <section>
-    <h1 class="heading"><span>Our Reviews</span></h1>
+    <h1 class="heading"><span>Follow Us</span></h1>
 </section>
-
+<section>
+    <a class="twitter-timeline" data-height="400" data-theme="light" href="https://twitter.com/KDL_Services?ref_src=twsrc%5Etfw">Tweets by KDL_Services</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</section>
+<!------------
 <section class="review-info">
 
     <div class="wrapper">
@@ -424,7 +462,7 @@
         </div>
       </div>
    
-</section>
+</section> ------>
 
 <section class="job">
 
@@ -446,7 +484,7 @@
                 <h3>Headquarters</h3>
                 <a target="_blank" href="https://goo.gl/maps/KdiwZ252KB2gceBh7"><i class="fas fa-map-marker-alt"><span> KDL Services</span></i></a>
                 <p>212 Mohawk Avenue<br>Louisville, Kentucky 40209</p>
-                <img src="images/footergray.png" alt="kentucky map with KDL location" class="map"> 
+                
             </div>
 
         <!----------
@@ -471,17 +509,20 @@
             <div class="boxer">
                 <h3>Contact Info</h3>
                 <a href="#" target="_blank"><i class="fas fa-phone"></i>502-653-7627</a>
-                <a href="#" target="_blank"><i class="fas fa-envelope"></i>info@kdl-services.com</a>
-                 
+                <a href="#" target="_blank"><i class="fas fa-envelope"></i>info@kdl-services.com</a>  
+            </div>
+            
+            <div>
+                <img src="images/footergray.png" alt="kentucky map with KDL location" class="map"> 
             </div>
     </div>
-
+   
             <div class="share">
                 <a href="#" class="fab fa-facebook-f"></a> 
                 <a href="#" class="fab fa-twitter"></a>
                 <a href="#" class="fab fa-linkedin"></a>
             </div>
-
+            
             <div class="credit">created by<span> DaniBee&#128029Designs</span> all rights reserved</div>
         
 
