@@ -61,7 +61,7 @@ html{
 .circle .circle-about .kdl{
     width: 250px;
     float: left;
-   shape-outside: circle(50%);
+   shape-outside: square(50%);
    margin-right: 2rem;
 }
 
@@ -106,7 +106,7 @@ html{
 .profile-team img{
     width: 250px;
     height: 250px;
-    border-radius: 2rem;
+    border-radius: 50%;
     object-fit: cover;
 }
 .profile-team h2{
